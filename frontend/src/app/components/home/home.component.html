@@ -1,0 +1,187 @@
+<div class="Nav-Bar">
+  <div class="d-flex flex-column flex-shrink-0 p-2 text-bg-dark" style="width: 300px;">
+    <div class="Div-Sup">
+      <a href="/" class="d-flex align-items-center mb-2 mb-md-0 me-md-auto text-white text-decoration-none">
+        <img src="../../../assets/img/Logo/logo.png" width="100px" alt="">
+        <svg class="bi pe-none me-0" width="10" height="8"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Policía de la Provicia de Santa Fe</span>
+      </a>
+    </div>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" aria-current="page">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Empleados
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+        Armas
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+        Chalecos Balísticos
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+        Planillas (no fun)
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+        Salir (no fun)
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown"></div>
+  </div>
+
+  <div class="Title"><H1>Empleados</H1></div>
+
+  <div class="Div-Inputs" *ngIf="datosemp">
+
+    <div class="Inputs1">
+
+      <div id="Inputs1_1">
+
+        <span class="input-group-text">Nombre/s</span>
+        <input type="text" aria-label="First name" class="form-control" id="form1" value={{datosemp.nombres}}>
+
+      </div>
+
+      <div id="Inputs1_2">
+
+        <span class="input-group-text">Apellido/s</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form1" value={{datosemp.apellidos}}>
+
+      </div>
+      <div id="Inputs1_3">
+        <span class="input-group-text">Jerarquía</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form1" value={{datosemp.jerarquia}}>
+      </div>
+    </div>
+
+    <div class="Inputs2">
+
+      <div id="Inputs2_1">
+        <span class="input-group-text">NI</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form2" value={{datosemp.nI}}>
+
+        <span class="input-group-text" id="marg">D.N.I.</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form2" value={{datosemp.dni}}>
+      </div>
+
+      <div id="Inputs2_2">
+
+        <span class="input-group-text">Situación</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form1" value={{datosemp.situacion}}>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="Title" id="arms"><H1>Armas</H1></div>
+
+  <div class="Div-Inputs1">
+
+    <div class="Inputs1">
+
+      <div id="Inputs1_4">
+
+        <span class="input-group-text">Tipo</span>
+        <input type="text" aria-label="First name" class="form-control" id="form5">
+
+      </div>
+
+      <div id="Inputs1_5">
+
+        <span class="input-group-text">Remarque</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form3">
+
+      </div>
+    </div>
+
+    <div class="Inputs3">
+
+      <div id="Inputs2_3">
+        <span class="input-group-text">Modelo</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+        <span class="input-group-text" id="marg">Marca</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+        <span class="input-group-text" id="marg">Est. Fun.</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form6">
+
+      </div>
+
+      <div id="Inputs2_4">
+
+        <span class="input-group-text" id="marg1">Numeración</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form3">
+
+        <span class="input-group-text" id="marg">Calibre</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="Title" id="chaleco"><H1>Chalecos</H1></div>
+
+  <div class="Div-Inputs2">
+
+    <div class="Inputs1">
+
+      <div id="Inputs1_4">
+
+        <span class="input-group-text">Marca</span>
+        <input type="text" aria-label="First name" class="form-control" id="form5">
+
+      </div>
+
+      <div id="Inputs1_5">
+
+        <span class="input-group-text">Niv. Protección</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form3">
+
+      </div>
+    </div>
+
+    <div class="Inputs3">
+
+      <div id="Inputs2_5">
+        <span class="input-group-text" id="marg">Modelo</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+        <span class="input-group-text" id="marg">Talle</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+      </div>
+
+      <div id="Inputs2_6">
+
+        <span class="input-group-text" id="marg">N° Serie</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form4">
+
+        <span class="input-group-text" id="marg1">Fecha Fab.</span>
+        <input type="text" aria-label="Last name" class="form-control" id="form7">
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="input-group">
+  <input required="" type="text" name="text" autocomplete="off" class="input">
+  <label class="user-label">First Name</label>
+</div> -->
